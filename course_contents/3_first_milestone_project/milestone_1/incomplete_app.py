@@ -1,6 +1,6 @@
 # Incomplete app!
 
-MENU_PROMPT = "\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie by title, or 'q' to quit: "
+
 movies = []
 
 
@@ -8,7 +8,7 @@ movies = []
 title = input("Enter the movie title: ")
 director = input("Enter the movie director: ")
 year = input("Enter the movie release year: ")
-
+MENU_PROMPT = movies[a]
 movies.append({
     'title': title,
     'director': director,
@@ -17,11 +17,17 @@ movies.append({
 
 
 # Create other functions for:
-#   - listing movies
+# list of movies
+for movie in movies:
+    movies = movie['title']['director']['year']
+    print(f" the list of movies are {title}: {director}: {year}.")
 #   - finding movies
+title = input["Enter the title of the movie:"]
+print(f" {title}, {[director]}, {[year]}, :")
 
 
 # And another function here for the user menu
+MENU_PROMPT = "\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie by title, or 'q' to quit: "
 selection = input(MENU_PROMPT)
 while selection != 'q':
     if selection == "a":
@@ -37,3 +43,4 @@ while selection != 'q':
 
 
 # Remember to run the user menu function at the end!
+MENU_PROMPT = "\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie by title, or 'q' to quit: "
